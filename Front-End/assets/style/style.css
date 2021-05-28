@@ -385,12 +385,22 @@ input[type=checkbox]:checked:after {
 .input-container {
   position: relative;
 }
-
+.input-container > img.user-icon {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+.input-container > img.email-icon {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
 .input-container > img.key-icon {
   position: absolute;
   top: 9px;
   left: 10px;
 }
+
 .input-container > img.visibility-icon {
   position: absolute;
   top: 9px;
