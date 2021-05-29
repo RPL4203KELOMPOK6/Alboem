@@ -1,0 +1,350 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alboem</title>
+  <!-- IMPORT JQUERY -->
+  <script src='./assets/js/jquery-3.4.1.min.js'></script>
+  <!-- IMPORT POPPER FOR DROPDOWN NAVBAR -->
+  <script src='./assets/js/popper.min.js'></script>
+  <!-- IMPORT POPPER FOR BOOTSTRAP JS NAVBAR -->
+  <script src='./assets/js/bootstrap.min.js'></script>
+
+
+  <!-- IMPORT BOOTSTRAP -->
+  <link rel='stylesheet' type='text/css' media='screen' href='./assets/style/bootstrap.css'>
+  <!-- IMPORT OWL CAROUSEL -->
+  <link rel="stylesheet" href="./assets/style/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/style/owl.theme.default.min.css">
+  <link rel='stylesheet' type='text/css' media='screen' href='./assets/style/animate.css'>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+
+  <!-- IMPORT FONT AWESOME LIBRARY ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  <!-- IMPORT MANUAL STYLE -->
+  <link rel='stylesheet' type='text/css' media='screen' href='./assets/style/style.css'>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light container ">
+    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse  navbar-nav navbar-center mx-auto" id="navbarSupportedContent">
+      <form class="form-inline my-2 mx-auto  my-lg-0">
+        <div class="input-group">
+          <input class="form-control py-0  search-bar border border-dark rounded-pill" id="example-search-input">
+          <span class="input-group-append">
+            <button id="filtersubmit" class="border-0"><i class="fa fa-search search-icon text-body"></i></button>
+
+        </div>
+      </form>
+      <ul class="navbar-nav">
+        <li class="nav-item active mx-md-3 mx-0">
+          <a class="nav-link d-flex" href="#"><img src="assets/img/Group.png" alt=""><span
+              class="d-block text-body mt-1 ml-2 font-weight-bold d-md-none">Cart</span></a>
+        </li>
+        <li class="nav-item mx-md-3 mx-0">
+          <a class="nav-link d-flex" href="#"><img src="assets/img/favorite-24px 1.png" alt=""><span
+              class="d-block  text-body mt-1 ml-2 font-weight-bold d-md-none">Favorite</span></a>
+        </li>
+        <li class="nav-item mx-md-3 mx-0">
+          <a class="nav-link d-flex" href="#"><img src="assets/img/clarity_notification-solid-badged.png" alt=""><span
+              class="d-block  text-body mt-1 ml-2 font-weight-bold d-md-none">Notification</span></a>
+        </li>
+        <!-- UNCOMMENT UNTUK MENAMPILKAN TOMBOL LOGIN/DAFTAR -->
+
+        <!-- <li class="nav-item mx-md-3 mx-0">
+          <a class="nav-link font-weight-bold form-font text-body mt-1 text-center" href="#">Login</a>
+        </li>
+        <li class="nav-item mx-md-3  mx-0">
+          <a class="nav-link font-weight-bold form-font text-body register-button mt-1 text-center" href="#">Daftar</a>
+        </li> -->
+        <li class="nav-item dropdown mx-md-3 mx-0">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="assets/img/account.png" alt="">
+          </a>
+          <div class="dropdown-menu p-4" aria-labelledby="navbarDropdown">
+            <div class="d-flex shadow-sm align-item-center rounded-small p-2">
+              <img src="assets/img/Ellipse 175.png" class="photo-profile rounded-circle" alt=""> <span
+                class="text-gray ml-3 font-weight-bold"> John Doe</span>
+            </div>
+            <a href="#">
+              <div class="shadow-sm mt-2 rounded-small p-2">
+                <p class="text-gray font-weight-bold">Your Favorite Shop</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="shadow-sm mt-2 rounded-small p-2">
+                <p class="text-gray font-weight-bold">Your Transaction</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="shadow-sm mt-2 rounded-small p-2">
+                <p class="text-gray font-weight-bold">Setting</p>
+              </div>
+            </a>
+            <p class="text-gray font-weight-bold text-right mt-4 cursor-pointer">Logout <i
+                class="ml-1 fa fa-sign-out-alt"></i></p>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+  <ul class="nav justify-content-center primary-bg">
+    <li class="nav-item mx-md-4">
+      <a class="nav-link  text-white font-weight-bold" href="#">Beranda</a>
+    </li>
+    <li class="nav-item mx-md-4">
+      <a class="nav-link  text-white font-weight-bold dropdown-toggle "  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" href="#">Kategori</a>
+      <div class="dropdown-menu category-menu primary-bg dropdown-menu-right pb-5 px-3" style="left: -130px;">
+        <a class="d-block bg-black mt-3 px-3 py-1 rounded text-white font-weight-bold" href="#">New Album</a>
+        <a class="d-block bg-black mt-3 px-3 py-1 rounded text-white font-weight-bold" href="#">Favourite Album </a>
+        <a class="d-block bg-black mt-3 px-3 py-1 rounded text-white font-weight-bold" href="#">Top Seller</a>
+        <a class="d-block bg-black mt-3 px-3 py-1 rounded text-white font-weight-bold" href="#">Old Album</a>
+        <a class="d-block bg-black mt-3 px-3 py-1 rounded text-white font-weight-bold" href="#">Korean Album</a>
+      </div>
+    </li>
+    <li class="nav-item mx-md-4">
+      <a class="nav-link  text-white font-weight-bold" href="#">Tentang Kami</a>
+    </li>
+  </ul>
+
+  <section class="position-relative container form-font">
+    <div class="bg-white  my-5 ">
+      <h5 class="font-weight-normal border-bottom p-4"><i class="fas fa-arrow-left mr-3"></i>Pembayaran</h5>
+      <div class="border border-warning m-3 d-flex align-item-center">
+        <span class="fa-stack m-3 mr-5">
+          <i class="fas fa-circle text-warning fa-stack-2x"></i>
+          <i class="fas fa-bell fa-stack-1x text-center ml-2 ml-md-0 fa-inverse"></i>
+        </span>
+        <p class="font-weight-bold ">Perhatian Virtual Account untuk top up AlboemPay dan pembelian barang berbeda.</p>
+      </div>
+      <div class="w-responsive-50 p-3 d-block mx-auto">
+        <div class="d-flex border-bottom pb-3 justify-content-between">
+          <h6>Total Pembayaran</h6>
+          <h6 class="text-danger">Rp.131.000</h6>
+        </div>
+        <div class="d-flex  mt-3">
+          <div class="mr-3">
+            <img src="assets/img/Logo-BCA-Bank-Central-Asia-Group.jpg" class="bank-icon" alt="">
+          </div>
+          <div>
+            <h6>Bank BCA (Dicek Otomatis)</h6>
+            <div class="d-none d-md-block">
+              <!-- DESKTOP VIEW -->
+              <small>No. Rekening:</small>
+              <div class="d-flex flex-column flex-md-row ">
+                <h5 class="text-danger mt-1" id="rekening">126 0821 1366 6271</h5>
+                <h5 class="text-info mt-1 ml-4 cursor-pointer copyrekening">Salin</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- MOBILE VIEW -->
+        <div class="d-block d-md-none mt-2">
+          <small>No. Rekening:</small>
+          <div class="d-flex flex-column flex-md-row ">
+            <h5 class="text-danger mt-1">126 0821 1366 6271</h5>
+            <h5 class="text-info mt-1 text-center cursor-pointer copyrekening">Salin</h5>
+          </div>
+        </div>
+        
+        <div class="d-flex collapse-container justify-content-between border-bottom pb-2 mt-2" data-toggle="collapse"
+          data-target="#collapseATM" aria-expanded="false" aria-controls="collapseExample">
+          <h6>Petunjuk Transfer ATM</h6>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="collapse show" id="collapseATM" aria-expanded="false" aria-controls="collapseExample">
+          <div class="py-2">
+            <!-- ISI CONTENT  -->
+            <!-- LIST ITEM -->
+            <div class="row flex-nowrap">
+              <!-- NUMBER  -->
+              <div class="col-1">
+                <div class="circle-number">1</div>
+              </div>
+              <div class="col-11">
+                <p><span class="text-secondary">Pilih</span> Transaksi Lainnya > Transfer > Ke Rek BCA
+                  Virtual Account.</p>
+              </div>
+            </div>
+            <!-- LIST ITEM END -->
+            <!-- LIST ITEM -->
+            <div class="row flex-nowrap mt-2">
+              <!-- NUMBER  -->
+              <div class="col-1">
+                <div class="circle-number">2</div>
+              </div>
+              <div class="col-11">
+                <p><span class="text-secondary">Pilih</span> Nomor Virtual Account <span class="text-danger">126 0821
+                    1366 6271</span><span class="text-secondary"> dan pilih</span> Benar.</p>
+              </div>
+            </div>
+            <!-- LIST ITEM END -->
+            <!-- LIST ITEM -->
+            <div class="row flex-nowrap mt-2">
+              <!-- NUMBER  -->
+              <div class="col-1">
+                <div class="circle-number">3</div>
+              </div>
+              <div class="col-11">
+                <p><span class="text-secondary ">Periksa Informasi yang tertera di layar. Pastikan Merchant
+                    adalah</span> Alboem, Total tagihan<span class="text-secondary"> sudah Benar
+                    dan username kamu </span> aldyr7 <span class="text-secondary">Jika benar pilih</span> Ya.</p>
+              </div>
+            </div>
+            <!-- LIST ITEM END -->
+          </div>
+        </div>
+        <div class="d-flex collapse-container justify-content-between border-bottom pb-2 mt-2" data-toggle="collapse"
+          data-target="#collapseibanking" aria-expanded="false" aria-controls="collapseExample">
+          <h6>Petunjuk Transfer iBanking</h6>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="collapse" id="collapseibanking" aria-expanded="false" aria-controls="collapseExample">
+          <div class="py-2">
+            <!-- ISI CONTENT  -->
+            <!-- LIST ITEM -->
+            <div class="row flex-nowrap">
+              <!-- NUMBER  -->
+              <div class="col-1">
+                <div class="circle-number">1</div>
+              </div>
+              <div class="col-11">
+                <p><span class="text-secondary">Pilih</span> Transaksi Lainnya > Transfer > Ke Rek BCA
+                  Virtual Account.</p>
+              </div>
+            </div>
+            <!-- LIST ITEM END -->
+            <!-- LIST ITEM -->
+            <div class="row flex-nowrap mt-2">
+              <!-- NUMBER  -->
+              <div class="col-1">
+                <div class="circle-number">2</div>
+              </div>
+              <div class="col-11">
+                <p><span class="text-secondary">Pilih</span> Nomor Virtual Account <span class="text-danger">126 0821
+                    1366 6271</span><span class="text-secondary"> dan pilih</span> Benar.</p>
+              </div>
+            </div>
+            <!-- LIST ITEM END -->
+            <!-- LIST ITEM -->
+            <div class="row flex-nowrap mt-2">
+              <!-- NUMBER  -->
+              <div class="col-1">
+                <div class="circle-number">3</div>
+              </div>
+              <div class="col-11">
+                <p><span class="text-secondary ">Periksa Informasi yang tertera di layar. Pastikan Merchant
+                    adalah</span> Alboem, Total tagihan<span class="text-secondary"> sudah Benar
+                    dan username kamu </span> aldyr7 <span class="text-secondary">Jika benar pilih</span> Ya.</p>
+              </div>
+            </div>
+            <!-- LIST ITEM END -->
+          </div>
+        </div>
+        <div class="d-flex collapse-container justify-content-between border-bottom pb-2 mt-2" data-toggle="collapse"
+          data-target="#collapsembanking" aria-expanded="false" aria-controls="collapseExample">
+          <h6>Petunjuk Transfer mBanking</h6>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="collapse" id="collapsembanking" aria-expanded="false" aria-controls="collapseExample">
+          <div class="py-2">
+          <!-- ISI CONTENT  -->
+            <!-- LIST ITEM -->
+            <div class="row flex-nowrap">
+              <!-- NUMBER  -->
+              <div class="col-1">
+                <div class="circle-number">1</div>
+              </div>
+              <div class="col-11">
+                <p><span class="text-secondary">Pilih</span> Transaksi Lainnya > Transfer > Ke Rek BCA
+                  Virtual Account.</p>
+              </div>
+            </div>
+            <!-- LIST ITEM END -->
+            <!-- LIST ITEM -->
+            <div class="row flex-nowrap mt-2">
+              <!-- NUMBER  -->
+              <div class="col-1">
+                <div class="circle-number">2</div>
+              </div>
+              <div class="col-11">
+                <p><span class="text-secondary">Pilih</span> Nomor Virtual Account <span class="text-danger">126 0821
+                    1366 6271</span><span class="text-secondary"> dan pilih</span> Benar.</p>
+              </div>
+            </div>
+            <!-- LIST ITEM END -->
+            <!-- LIST ITEM -->
+            <div class="row flex-nowrap mt-2">
+              <!-- NUMBER  -->
+              <div class="col-1">
+                <div class="circle-number">3</div>
+              </div>
+              <div class="col-11">
+                <p><span class="text-secondary ">Periksa Informasi yang tertera di layar. Pastikan Merchant
+                    adalah</span> Alboem, Total tagihan<span class="text-secondary"> sudah Benar
+                    dan username kamu </span> aldyr7 <span class="text-secondary">Jika benar pilih</span> Ya.</p>
+              </div>
+            </div>
+            <!-- LIST ITEM END -->
+          </div>
+        </div>
+        <a href="#" class="btn primary-bg mx-auto d-block w-50 mt-4 text-white font-weight-bold">OK</a>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="footer primary-bg text-white">
+    <div class="container pt-4">
+      <div class="d-flex justify-content-between flex-column flex-md-row">
+        <div>
+          <h3 class="font-weight-bold ">Alboem</h3>
+          <p class="font-weight-bold"><i>Our tim menyediakan layanan platform jual beli album</i></p>
+        </div>
+        <div class="mr-5 mt-3 mt-md-0">
+          <h5 class="font-weight-bold ">Find Us</h5>
+          <a href="#"> <img src="assets/img/facebook-24px 1.png" alt=""></a>
+          <a href="#" class="ml-2"> <img src="assets/img/youtube 1.png" alt=""></a>
+          <a href="#" class="ml-2"> <img src="assets/img/Frame.png" alt=""></a>
+
+        </div>
+      </div>
+      <div class="d-flex mt-5">
+        <p class="font-weight-bold">Adress</p>
+        <span class="font-weight-bold ml-3">:Perumahan Buah Batu H44</span>
+      </div>
+      <div class="d-flex  mt-2">
+        <p class="font-weight-bold">Phone</p>
+        <span class="font-weight-bold ml-3">:08123456789</span>
+      </div>
+      <div class="d-flex mt-2">
+        <p class="font-weight-bold">Email</p>
+        <span class="font-weight-bold ml-3">:rpl4203kelompok6@gmail.com</span>
+      </div>
+
+    </div>
+    <div class="disclaimer mt-5">
+      <p class="text-center py-1 font-weight-light content"><i class="far fa-copyright mr-1"></i> 2020. Powered by
+        Alboem</p>
+    </div>
+  </section>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
