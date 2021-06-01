@@ -56,13 +56,33 @@
         <li class="nav-item mx-md-3 mx-0">
             <a class="nav-link d-flex" href="#"><img src="assets/img/clarity_notification-solid-badged.png" alt=""><span class="d-block  text-body mt-1 ml-2 font-weight-bold d-md-none">Notification</span></a>
         </li>
-        <!-- UNCOMMENT UNTUK MENAMPILKAN TOMBOL LOGIN/DAFTAR -->
 
-        <li class="nav-item mx-md-3 mx-0">
-          <a class="nav-link font-weight-bold form-font text-body mt-1 text-center" href="login">Login</a>
-        </li>
-        <li class="nav-item mx-md-3  mx-0">
-          <a class="nav-link font-weight-bold form-font text-body register-button mt-1 text-center" href="registrasi">Daftar</a>
+        <li class="nav-item dropdown mx-md-3 mx-0">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="assets/img/account.png" alt="">
+          </a>
+          <div class="dropdown-menu p-4" aria-labelledby="navbarDropdown">
+           <div class="d-flex shadow-sm align-item-center rounded-small p-2">
+            <img src="assets/img/Ellipse 175.png" class="photo-profile rounded-circle" alt=""> <span class="text-gray ml-3 font-weight-bold"> John Doe</span>
+           </div>
+           <a href="#">
+             <div  class="shadow-sm mt-2 rounded-small p-2">
+               <p class="text-gray font-weight-bold">Your Favorite Shop</p>
+             </div>
+            </a>
+            <a href="#">
+              <div  class="shadow-sm mt-2 rounded-small p-2">
+                <p class="text-gray font-weight-bold">Your Transaction</p>
+              </div>
+             </a>
+             <a href="#">
+              <div  class="shadow-sm mt-2 rounded-small p-2">
+                <p class="text-gray font-weight-bold">Setting</p>
+              </div>
+             </a>
+             <p class="text-gray font-weight-bold text-right mt-4 cursor-pointer">Logout <i class="ml-1 fa fa-sign-out-alt"></i></p>
+          </div>
         </li>
       </ul>
 
