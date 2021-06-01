@@ -56,16 +56,8 @@
         <li class="nav-item mx-md-3 mx-0">
             <a class="nav-link d-flex" href="#"><img src="assets/img/clarity_notification-solid-badged.png" alt=""><span class="d-block  text-body mt-1 ml-2 font-weight-bold d-md-none">Notification</span></a>
         </li>
-        <!-- UNCOMMENT UNTUK MENAMPILKAN TOMBOL LOGIN/DAFTAR -->
-
-        <li class="nav-item mx-md-3 mx-0">
-          <a class="nav-link font-weight-bold form-font text-body mt-1 text-center" href="login">Login</a>
-        </li>
-        <li class="nav-item mx-md-3  mx-0">
-          <a class="nav-link font-weight-bold form-font text-body register-button mt-1 text-center" href="registrasi">Daftar</a>
-        </li>
+        @yield('login')
       </ul>
-
     </div>
 
   </nav>
@@ -75,42 +67,20 @@
       <a class="nav-link  text-white font-weight-bold" href="#">Beranda</a>
     </li>
     <li class="nav-item mx-md-4">
-      <a class="nav-link  text-white font-weight-bold" href="#">Kategori</a>
+      <a class="nav-link  text-white font-weight-bold dropdown-toggle "  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" href="#">Kategori</a>
+      <div class="dropdown-menu category-menu primary-bg dropdown-menu-right pb-5 px-3" style="left: -130px;">
+        <a class="d-block bg-black mt-3 px-3 py-1 rounded text-white font-weight-bold" href="#">New Album</a>
+        <a class="d-block bg-black mt-3 px-3 py-1 rounded text-white font-weight-bold" href="#">Favourite Album </a>
+        <a class="d-block bg-black mt-3 px-3 py-1 rounded text-white font-weight-bold" href="#">Top Seller</a>
+        <a class="d-block bg-black mt-3 px-3 py-1 rounded text-white font-weight-bold" href="#">Old Album</a>
+        <a class="d-block bg-black mt-3 px-3 py-1 rounded text-white font-weight-bold" href="#">Korean Album</a>
+      </div>
     </li>
     <li class="nav-item mx-md-4">
       <a class="nav-link  text-white font-weight-bold" href="#">Tentang Kami</a>
     </li>
   </ul>
-  <section>
-    <!-- CAROUSEL HERO -->
-    <div class="container">
-      <div id="carousel-hero" class="owl-carousel owl-theme mt-5">
-        <div class="item hero-img-carousel ">
-          <div class="position-relative">
-            <!-- GAMBAR -->
-            <img class="w-100 " src="assets/img/highlight1 1.png" alt="">
-            <!-- CAPTION -->
-            <p class="text-white carousel-caption font-weight-bold">Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-        <div class="item hero-img-carousel ">
-          <div class="position-relative">
-            <img class="w-100 " src="assets/img/highlight1 1.png" alt="">
-            <p class="text-white carousel-caption font-weight-bold">Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-        <div class="item hero-img-carousel ">
-          <div class="position-relative">
-            <img class="w-100 " src="assets/img/highlight1 1.png" alt="">
-            <p class="text-white carousel-caption font-weight-bold">Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   @yield('container')
 

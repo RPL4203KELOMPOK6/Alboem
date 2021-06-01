@@ -2,6 +2,15 @@
 
 @section('title','Alboem')
 
+@section('login')
+  <li class="nav-item mx-md-3 mx-0">  
+    <a class="nav-link font-weight-bold form-font text-body mt-1 text-center" href="login">Login</a>
+  </li>
+  <li class="nav-item mx-md-3  mx-0">
+    <a class="nav-link font-weight-bold form-font text-body register-button mt-1 text-center" href="registrasi">Daftar</a>
+  </li>
+@endsection
+
 @section('container')
   <section>
     <!-- CAROUSEL HERO -->

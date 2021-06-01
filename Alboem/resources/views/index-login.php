@@ -1,4 +1,4 @@
-@extends('layout/login-nav');
+@extends('layout/main');
 
 @section('title','Alboem')
 

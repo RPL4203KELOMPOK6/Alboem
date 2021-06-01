@@ -6,26 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alboem</title>
     <!-- IMPORT JQUERY -->
-    <script src='./assets/js/jquery-3.4.1.min.js'></script>
+    <script src='assets/js/jquery-3.4.1.min.js'></script>
     <!-- IMPORT POPPER FOR DROPDOWN NAVBAR -->
-    <script src='./assets/js/popper.min.js'></script>
+    <script src='assets/js/popper.min.js'></script>
     <!-- IMPORT POPPER FOR BOOTSTRAP JS NAVBAR -->
-    <script src='./assets/js/bootstrap.min.js'></script>
-
+    <script src='assets/js/bootstrap.min.js'></script>
 
     <!-- IMPORT BOOTSTRAP -->
-    <link rel='stylesheet' type='text/css' media='screen' href='./assets/style/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/style/bootstrap.css'>
     <!-- IMPORT OWL CAROUSEL -->
-    <link rel="stylesheet" href="./assets/style/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/style/owl.theme.default.min.css">
-    <link rel='stylesheet' type='text/css' media='screen' href='./assets/style/animate.css'>
-    <script src="./assets/js/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="assets/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/style/owl.theme.default.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/style/animate.css'>
+    <script src="assets/js/owl.carousel.min.js"></script>
 
     <!-- IMPORT FONT AWESOME LIBRARY ICON -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    
+
     <!-- IMPORT MANUAL STYLE -->
-    <link rel='stylesheet' type='text/css' media='screen' href='./assets/style/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/style/style.css'>
 </head>
 
 <body class="bg-white">
@@ -46,12 +45,12 @@
                 <div class="form-group">
                     <label for="exampleInputEmail1" class="email-label">Email address</label>
                     <input type="email" class="form-control mt-4 py-4" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>  
+                </div>
                 <div class="d-flex justify-content-between">
                     <small class="form-text">Kembali ke <a href="#" class="font-weight-bold" style="color: #00B8C7">Sign In</a></a></small>
                     <button type="submit" class="btn text-white px-4 py-2 shadow" style="background-color: #4B97BC;">Reset</button>
                 </div>
-                  
+
             </form>
         </div>
         </div>
