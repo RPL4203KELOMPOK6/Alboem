@@ -16,6 +16,9 @@ use App\Http\Controllers\AuthController;
 */
 
 Route::get('/',[HomeController::class,'index']);
-
 Route::get('/login',[AuthController::class,'login']);
 Route::get('/registrasi',[AuthController::class,'registrasi']);
+Route::get('/forgot_password',[AuthController::class,'forgot_password']);
+Route::get('/address',[AuthController::class,'address']);
+Route::get('/cart',[AuthController::class,'cart']);
+Route::get('/detail_produk',[AuthController::class,'detail_produk']);
